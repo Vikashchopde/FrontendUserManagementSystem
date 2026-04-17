@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/login.jsx";
+import Register from "./pages/register.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import Users from "./pages/users.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
@@ -11,7 +12,8 @@ function App() {
       <Toaster position="top-right" />
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+         <Route path="/" element={<Register />} />
+        <Route path="/login" element={<Login />} />
 
         <Route
           path="/dashboard"
