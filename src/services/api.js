@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://vercel.com/vikashchopdes-projects/backend-user-management-system",
+  baseURL: "https://backend-user-management-system-eight.vercel.app",
 });
 
 // attach token automatically
